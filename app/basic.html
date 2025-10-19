@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        .wrap {
+            display: flex;
+            gap: 10px;
+            /* flex-direction: row|column; */
+            align-items: center;
+            /* flex-start, flex-end */
+            justify-content: center;
+            /* space-between, space-around */
             width: 1000px;
+            height: 500px;
+            background: silver;
             margin: auto;
-            font-size: 1.4em;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background: deeppink;
         }
     </style>
 </head>
 <body>
-    <h1>Some Title</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda harum amet eveniet dolore, totam quos adipisci ut debitis numquam vero id, hic eius in deserunt reprehenderit reiciendis dicta cupiditate ducimus?</p>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
 </html>
