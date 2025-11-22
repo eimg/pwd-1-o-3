@@ -15,6 +15,8 @@
     <ul>
         <?php foreach($roles as $role): ?>
             <li>
+                <a href="del.php?id=<?= $role['id'] ?>">Delete</a>
+                <a href="edit.php?id=<?= $role['id'] ?>">Edit</a>
                 <?= $role['name'] ?>
                 (<?= $role['value'] ?>)
             </li>
