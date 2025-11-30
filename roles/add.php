@@ -3,6 +3,7 @@
 $name = $_POST['name'];
 $value = $_POST['value'];
 
+// XSS - Script Injection
 $sql = "INSERT INTO roles (name, value) VALUES (:name, :value)";
 echo $sql;
 
